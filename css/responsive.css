@@ -1,0 +1,149 @@
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    img {
+        height: 30vh;
+        object-fit: cover;
+    }
+    body {
+        font-size: 0.8rem;
+    }
+    .menu {
+        display: none;
+    }
+    #presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_presentation {
+        width: 100%;
+    }
+    #description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_description {
+        width: 100%;
+        order: 2;
+    }
+    .txt_activite {
+        width: 100%;
+    }
+    .titre {
+        font-size: 1.8em;
+    }
+    .activite {
+        text-align: center;
+        font-size: 0.5em;
+    }
+    .activite_a {
+        background: url(../images/points.png), center url('../images/sport.jpg');
+        background-size: cover;
+    }
+    .activite_b {
+        background: url(../images/points.png), center url('../images/sport2.jpg');
+        background-size: cover;
+    }
+    .activite_c {
+        background: url(../images/points.png), center url('../images/sport3.jpg');
+        background-size: cover;
+    }
+    .activite_d {
+        background: url(../images/points.png), center url('../images/sport4.jpg');
+        background-size: cover;
+    }
+    #planning {
+        width: 100%;
+    }
+    
+
+    #tarifs {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_tarifs {
+        width: 100%;
+    }
+    #infos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_infos {
+        order: 2;
+        width: 100%;
+    }
+    .txt_domicile {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #menu_burger {
+        display: none;
+    }
+    .burger
+    {
+        display: flex;
+        font-size: 40px;
+        color: #557C55;
+    }
+    
+    header {
+        position: relative;
+    }
+    #logo a{
+        font-size: 3rem;
+    }
+    .nav_responsive {
+        display: flex;
+        flex-direction: column;
+    }
+    #nav_bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .titre::before, .titre::after {
+        width: 8%;
+        margin-top: 1em;
+    }
+    .titre {
+        font-size: 1.5rem;
+    }
+    .container {
+        width: 100%;
+    }
+    #grille {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .txt_activites {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media all and (max-width: 430px) {
+    img {
+        height: 20vh;
+        object-fit: cover;
+    }
+    #presentation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_presentation {
+        width: 100%;
+    }
+    #description {
+        flex-direction: column;
+        align-items: center;
+    }
+    .txt_description {
+        width: 100%;
+        order: 2;
+    }
+    .txt_activite {
+        width: 100%;
+    }
+
+
+    
+}

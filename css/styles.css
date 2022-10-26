@@ -1,0 +1,341 @@
+:root {
+    --couleurNav: rgba(166, 207, 152, 1);
+    --couleurTitre: rgb(85, 124,85);
+}
+
+/* @font-face {
+    font-family: 'Libre Caslon Display';
+    src: url('//fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+}
+@font-face {
+    font-family: 'Hina Mincho Display';
+    src: url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+}
+@font-face {
+    font-family: 'The Nautigal';
+    src: url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@400;700&display=swap');
+} */
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    /* font-size: 1.6em; */
+    margin: 0;
+    min-width: 300px;
+    background: rgba(242, 255, 233, 0.7);
+}
+
+h2 {
+    color: var(--couleurTitre);
+    font-family: 'Hina Mincho', serif, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2em;
+}
+
+img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+/* LOGO et Nav barre */
+
+header {
+    background: var(--couleurNav);
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.nav_bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    font-family: 'Hina Mincho', serif, Arial, Helvetica, sans-serif;
+}
+#logo {
+    font-size: 2.5em;
+}
+#logo a {
+    color: #DB6897;
+    font-family: 'The Nautigal', cursive, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.effet:hover {
+    animation: effet 2s;
+    -webkit-animation: effet 2s;
+}
+@keyframes effet {
+    0% {
+        text-shadow: 5px 4px rgb(242, 255, 233), -5px -6px rgb(85, 124,85);
+    }
+    25% {
+        text-shadow: -5px -6px rgb(242, 255, 233), 5px 4px rgba(85, 124,85, 0.5);
+    }
+    50% {
+        text-shadow: 5px 4px rgb(242, 255, 233), -8px 4px rgba(85, 124,85, 0.5);
+    }
+    75% {
+        text-shadow: -8px -4px rgb(242, 255, 233), -5px -4px rgba(85, 124,85, 0.5);
+    }
+    100% {
+        text-shadow: -5px 0 rgb(242, 255, 233), 5px -4px rgba(85, 124,85, 0.5);
+    }
+}
+@-webkit-keyframes effet {
+    0% {
+        text-shadow: 5px 4px rgb(85, 124,85), -5px -6px rgb(166, 207, 152);
+    }
+    25% {
+        text-shadow: -5px -6px rgb(85, 124,85), 5px 4px rgb(166, 207, 152);
+    }
+    50% {
+        text-shadow: 5px 4px rgb(85, 124,85), -8px 4px rgb(166, 207, 152);
+    }
+    75% {
+        text-shadow: -8px -4px rgb(85, 124,85), -5px -4px rgb(166, 207, 152);
+    }
+    100% {
+        text-shadow: -5px 0 rgbrgb(85, 124,85), 5px -4px rgb(166, 207, 152);
+    }
+}
+
+
+a h1 span {
+    color: #557C55;
+}
+
+#nav_bar a{
+    color: #557C55;
+    text-decoration: none;
+    margin: 1em;
+}
+#nav_bar a:hover {
+    color: #DB6897;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+/* Presentation */
+.presentation {
+    margin-top: 8em;
+}
+.titre::before, .titre::after {
+    content: "";
+    display: inline-block;
+    width: 20%;
+    height: 1px;
+    border-bottom: 1.6px solid #A6CF98;
+    margin: 0 1rem 0.25em;
+    margin-top: 3.2em;
+}
+
+#presentation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_presentation {
+    display: flex;
+    width: 50%;
+}
+.txt_presentation {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Description */
+
+#description {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txt_description {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 1em;
+    text-align: center;
+}
+.img_description {
+    display: flex;
+    width: 50%;
+}
+
+/* Autres activités */
+
+#grille_activité {
+    display: flex;
+    flex-grow: 1;
+}
+.txt_activites {
+    padding: 0 3em;
+    text-align: center;
+}
+#grille a {
+    text-decoration: none;
+}
+#grille {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 3vh;
+}
+.activite {
+    background: black;
+    border-radius: 0.5em;
+    color: white;
+    padding: 5em 2.5em;
+    transition: all .3s;
+    text-shadow: 0 0 15px black;
+}
+.activite_a {
+    background: url(../images/points.png), center url('../images/sport.jpg');
+    background-size: cover;
+}
+.activite_b {
+    background: url(../images/points.png),center url('../images/sport2.jpg');
+    background-size: cover;
+}
+.activite_c {
+    background: url(../images/points.png),center url('../images/sport3.jpg');
+    background-size: cover;
+}
+.activite_d {
+    background: url(../images/points.png),center url('../images/sport4.jpg');
+    background-size: cover;
+}
+.activite:hover {
+    opacity: 0.8;
+}
+.activite h4 {
+    font-size: 2em;
+}
+
+
+/* Acitivité cours à domicile */
+
+.grille_domicle img {
+    width: auto;
+    height: 40vh;
+}
+.grille_domicile {
+    margin-top: 3.2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    gap: 3vh;
+}
+.txt_domicile {
+    padding: 0 3em;
+    text-align: center;
+}
+/* Planning */
+
+th {
+    color: #557C55;
+}
+th, td {
+    border: 2px solid #557C55;
+    padding: 1.5vh;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* Page Tarifs et infos */
+/* Tarifs */
+
+.tarifs {
+    margin-top: 8em;
+}
+
+#tarifs {
+    display: flex;
+    justify-content: space-between;
+}
+.img_tarifs {
+    display: flex;
+    width: 50%;
+}
+.txt_tarifs {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 1em;
+    text-align: center;
+}
+
+#infos {
+    display: flex;
+    justify-content: space-between;
+}
+.img_infos {
+    display: flex;
+    width: 50%;
+}
+.txt_infos {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    padding: 1em;
+    text-align: center;
+  }
+/* Footer */
+
+footer {
+    background: var(--couleurNav);
+    padding: 1em;
+    font-family: 'The Nautigal', cursive, Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-top: 4px solid #557C55;
+    margin-top: 3.2em;
+}
+
+footer h3 {
+    color: #DB6897;
+}
+footer h3 a {
+    font-family: 'The Nautigal', cursive, Arial, Helvetica, sans-serif;
+}
+footer h3 > span {
+    font-weight: 400;
+    color: #557C55;
+    font-family: 'The Nautigal', cursive, Arial, Helvetica, sans-serif;
+}
+.flex_footer {
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    text-decoration: none;
+    color: #557C55;
+}
+footer a:hover {
+    color: #DB6897;
+    font-size: 1.5em;
+}
+.tel {
+    margin-top: 1em;
+}
+.fab {
+    margin-top: 0.5em;
+    color: #557C55;
+}
+
